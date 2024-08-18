@@ -50,8 +50,16 @@ body {
 
 .game-img {
     width: 100%;
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
     box-shadow: 0 0 10px #FFFFFF;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.game-card img {
+    width: 100%; /* Ensure images take up full width of their container */
+    height: auto; /* Maintain aspect ratio of images */
+    display: block; /* Remove extra space below images */
 }
 
 .game-card {
